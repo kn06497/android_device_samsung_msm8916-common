@@ -34,7 +34,7 @@
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
-/dev/rtc0                 0664   system     system
+/dev/rtc0                 0600   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
 /dev/smd_cxm_qmi          0640   radio      radio
@@ -201,8 +201,8 @@
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
 #nfc permissions
-#/dev/nfc-nci              0660    nfc         nfc
-#/dev/assd                 0660    nfc         nfc
+/dev/nfc-nci              0660    nfc         nfc
+/dev/assd                 0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
@@ -217,6 +217,9 @@
 
 # Ramdump devices
 /dev/ramdump*             0640   system     system
+
+#latin Mobile TV
+/dev/isdbt                0660   system     system
 
 #cpufreq_governor
 /sys/devices/system/cpu/cpu*	cpufreq/interactive/above_hispeed_delay    0660  system system
