@@ -1,11 +1,11 @@
 # Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/fortunaxx-common/fortunaxx-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-vendor.mk)
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # System properties
--include device/samsung/fortunaxx-common/system_prop.mk
+-include device/samsung/msm8916-common/system_prop.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
